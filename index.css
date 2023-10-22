@@ -280,6 +280,7 @@ h2{
     font-size: var(--fs-400);
     font-weight: 900;
     text-transform: uppercase;
+    color: hsl(212, 27%, 19%);
     background-color: transparent;
 
     cursor: pointer;
