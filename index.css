@@ -299,6 +299,7 @@ h2{
 }
 
 .learn-more-button:hover .underline{
+    color: hsl(212, 27%, 19%);
     opacity: 1;
 }
 
