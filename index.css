@@ -272,7 +272,7 @@ h2{
     color: hsl(232, 10%, 55%);
 }
 
-.text-cell button{
+.text-cell .learn-more-button{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -302,7 +302,6 @@ h2{
 
 @media (hover: hover) {
     .learn-more-button:hover .underline{
-        color: hsl(212, 27%, 19%);
         opacity: 1;
     }
 }
@@ -581,13 +580,13 @@ footer nav li a{
 
     .logo{
         width: 14rem;
+        margin: 0.4rem;
     }
 
     .mobile-menu-button{
         align-self: stretch;
         display: block;
 
-        padding: 0.1rem;
         background-color: transparent;
         transition: opacity 0.15s;
     }
@@ -614,6 +613,8 @@ footer nav li a{
         top: 10rem;
         left: 3rem;
         right: 3rem;
+
+        z-index: 200;
     }
 
     header nav::before{
