@@ -196,9 +196,11 @@ nav ul{
     transition: color 0.2s, background-color 0.2s;
 }
 
-.attention:hover{
-    color: hsl(0, 0%, 100%);
-    background-color: hsl(0, 0%, 100%, 0.25);
+@media (hover: hover) {
+    .attention:hover{
+        color: hsl(0, 0%, 100%);
+        background-color: hsl(0, 0%, 100%, 0.25);
+    }
 }
 
 .creatives-header-container{
@@ -298,9 +300,11 @@ h2{
     transition: opacity 0.15s;
 }
 
-.learn-more-button:hover .underline{
-    color: hsl(212, 27%, 19%);
-    opacity: 1;
+@media (hover: hover) {
+    .learn-more-button:hover .underline{
+        color: hsl(212, 27%, 19%);
+        opacity: 1;
+    }
 }
 
 .text-image-container{
@@ -434,8 +438,10 @@ footer nav li a{
     transition: color 0.15s;
 }
 
-footer nav li a:hover{
-    color: hsl(0, 0%, 100%);
+@media (hover: hover) {
+    footer nav li a:hover{
+        color: hsl(0, 0%, 100%);
+    }
 }
 
 .social-media-icons{
@@ -452,17 +458,19 @@ footer nav li a:hover{
     flex-basis: 0;
 }
 
-.icon-facebook:hover{
-    content: url("images/icon-facebook-white.svg");
-}
-.icon-instagram:hover{
-    content: url("images/icon-instagram-white.svg");
-}
-.icon-twitter:hover{
-    content: url("images/icon-twitter-white.svg");
-}
-.icon-pinterest:hover{
-    content: url("images/icon-pinterest-white.svg");
+@media (hover: hover) {
+    .icon-facebook:hover{
+        content: url("images/icon-facebook-white.svg");
+    }
+    .icon-instagram:hover{
+        content: url("images/icon-instagram-white.svg");
+    }
+    .icon-twitter:hover{
+        content: url("images/icon-twitter-white.svg");
+    }
+    .icon-pinterest:hover{
+        content: url("images/icon-pinterest-white.svg");
+    }
 }
 
 
@@ -572,13 +580,21 @@ footer nav li a:hover{
     }
 
     .logo{
-        width: 11rem;
+        width: 14rem;
     }
 
     .mobile-menu-button{
+        align-self: stretch;
         display: block;
+
+        padding: 0.1rem;
         background-color: transparent;
         transition: opacity 0.15s;
+    }
+
+    .mobile-menu-button > img{
+        aspect-ratio: 24 / 18;
+        height: 100%;
     }
 
     .mobile-menu-button[data-open="true"]{
